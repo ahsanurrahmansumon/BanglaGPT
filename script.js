@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatInput = document.querySelector('.chat-input-area input');
     const sendBtn = document.querySelector('.send-btn');
     const welcomeMessage = document.querySelector('.welcome-message');
+    
+
 
     // --- 2. FUNCTION TO SEND A MESSAGE ---
     const sendMessage = () => {

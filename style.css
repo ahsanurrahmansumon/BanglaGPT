@@ -41,6 +41,7 @@ body {
     border: 1px solid var(--border-color);
 }
 
+
 /* --- Sidebar Styles --- */
 .sidebar {
     flex-basis: 260px;
@@ -330,5 +331,65 @@ body {
     }
     30% {
         transform: translateY(-8px);
+    }
+}
+/* --- Responsive Styles for Mobile Devices --- */
+/* This code will apply only to screens 768px wide or smaller */
+@media (max-width: 768px) {
+    body {
+        padding: 0; /* Remove padding for full-screen experience on mobile */
+    }
+
+    .app-container {
+        flex-direction: column; /* Stack sidebar and chat area vertically */
+        height: 100vh;
+        min-height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+
+    .sidebar {
+        display: none; /* Add this line to hide the sidebar on mobile */
+        flex-basis: auto; /* Allow sidebar to shrink */
+        height: auto;
+        min-height: 200px; /* Give it a minimum height */
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        overflow-y: auto;
+    }
+
+    .header-nav {
+        display: none; /* Hide the navigation links to save space */
+    }
+    
+    .main-header {
+        padding: 15px 20px; /* Reduce padding on header */
+    }
+
+    .chat-messages {
+        padding: 20px; /* Reduce padding in message area */
+    }
+
+    .welcome-message h1 {
+        font-size: 1.8rem; /* Make welcome text smaller */
+    }
+
+    .message-bubble {
+        max-width: 85%; /* Allow bubbles to be a bit wider */
+        font-size: 15px;
+    }
+
+    .chat-input-area {
+        padding: 15px 20px; /* Reduce padding on input area */
+    }
+
+    .chat-input-area input,
+    .action-btn {
+        height: 45px; /* Make input elements slightly smaller */
+    }
+
+    .action-btn {
+        width: 45px;
+        font-size: 18px;
     }
 }
