@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanglaGPT – Your Intelligent Bangla Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn">
+                    <i class="fa-solid fa-plus"></i> নতুন চ্যাট
+                </button>
+            </div>
+            <nav class="chat-history">
+                <p class="history-title">আপনার কথোপকথন</p>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-message"></i> আজকের আলোচনা</a></li>
+                    <li><a href="#"><i class="fa-regular fa-message"></i> কবিতা লেখা</a></li>
+                    <li><a href="#"><i class="fa-regular fa-message"></i> ভ্রমণের পরিকল্পনা</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="chat-area">
+            <header class="main-header">
+                <div class="logo-section">
+                    <div class="logo-icon">B</div>
+                    <h1>BanglaGPT</h1>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#">হোম</a></li>
+                        <li><a href="#">ব্যবহার</a></li>
+                        <li><a href="#">প্লাগইন</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">সাহায্য</a></li>
+                    </ul>
+                </nav>
+                <div class="user-section">
+                    <img src="https://i.pravatar.cc/30" alt="User Avatar" class="user-avatar">
+                    <button class="login-btn">লগইন/সাইনআপ</button>
+                </div>
+            </header>
+
+            <div class="chat-interface">
+    <div class="chat-messages">
+        <div class="welcome-message">
+            <h1>বাংলাজিপিটি - আপনার বুদ্ধিমান সহায়ক</h1>
+        </div>
+
+        <div class="message-bubble ai-bubble">
+            <p>হ্যালো! আমি বাংলাজিপিটি। আমি আপনাকে কীভাবে সাহায্য করতে পারি?</p>
+        </div>
+
+        <div class="message-bubble user-bubble">
+            <p>আমি ঢাকা থেকে কক্সবাজার যাওয়ার সেরা উপায় জানতে চাই।</p>
+        </div>
+        
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" placeholder="এখানে আপনার বার্তা লিখুন...">
+        <button class="action-btn mic-btn" title="ভয়েস ইনপুট">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+        <button class="action-btn send-btn" title="পাঠান">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+        </main>
+    </div>
+<script src="script.js"></script> </body>
+</body>
+</html>
